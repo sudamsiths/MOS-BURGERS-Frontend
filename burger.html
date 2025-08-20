@@ -299,10 +299,59 @@
         @media (max-width: 768px) {
             .master-container {
                 grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
             }
 
             .checkout-wrapper {
                 grid-column: span 1;
+                order: -1; /* Move checkout to top on mobile */
+            }
+            
+            .card {
+                padding: 15px;
+                border-radius: 15px;
+            }
+            
+            .menu-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .master-container {
+                gap: 15px;
+                padding: 5px;
+            }
+            
+            .card {
+                padding: 12px;
+                border-radius: 12px;
+            }
+            
+            .title {
+                font-size: 14px;
+            }
+            
+            .category-grid {
+                gap: 6px;
+                padding: 8px 0;
+            }
+            
+            .category-grid button {
+                padding: 6px 8px;
+                font-size: 11px;
+                min-width: 60px;
             }
         }
 
